@@ -1,76 +1,55 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
-{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;\f1\fswiss\fcharset0 ArialMT;\f2\fmodern\fcharset0 Courier;
-}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red255\green255\blue255;
-\red255\green255\blue255;\red14\green14\blue14;}
-{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c100000\c100000\c99971\c0;\cssrgb\c100000\c100000\c99971\c0;
-\cssrgb\c100000\c100000\c100000\c0;\csgenericrgb\c5490\c5490\c5490;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+CHANGELOG: (Pre GitHub)
 
-\f0\fs24 \cf0 CHANGELOG: (Pre GitHub)\
-\
-###TLDR###\
-Documented changes for the first  5\'94 racing quad from stock CLF4 Racing board to smooth/responsive flights,\
-If you don\'92t care you can find all my changes in the diffall/dumpall files anyway, but this is the order I figured them out, and for earlier versions of Betaflight.\
-##########\
-\
-I should also note this was done back in Betaflight < 3.1.0, and then 3.2 \
-\cf2 \cb3 \
-Oct 2018:\
-* Got a CLF4 Board and a Chameleon (v1) frame, stock rates felt like flying a school bus.\
-* Put in my rates I had practiced from Liftoff, and it felt 100x better right off the bat.\
-\pard\pardeftab720\sl280\partightenfactor0
-\cf2 \cb3 \expnd0\expndtw0\kerning0
-* Added Vbat PID Compensation\
-* Moved set point transition from 0 to .7\
-\pard\pardeftab720\sl280\partightenfactor0
-\cf2 \cb4 * Moved set point transition from .7 to .8\cf2 \cb3 \
-* added default i term relax\
-* in receiver: smoothing type: filter / channels smoothed: RPYT\
-* calculated D weights to 1.0 on most using PIDs using following equation: find FF as (D/26 * D_Weight) \
-\pard\pardeftab720\sl360\partightenfactor0
-\cf2 \cb3 \
-Notes:\
-Flying better than stock, but had shakes and high oscillations on turns, and I had major prop wash. All this was noticeable on a Session 5\
-\
-\
-\cf2 \cb5 Jan 2019:\
-Learned more about feed forward transitioning, and I was getting better at \cf0 \cb5 flying, so quirks started to become more noticeable.\
-\
-\pard\pardeftab720\sl280\partightenfactor0
-\cf0 \cb5 * Changed feedforward transition again to .25\
-\
-47/40/28/204 / 1.72 / 768\
-58/55 (*45)/30/219 / 1.72 / 768\
-60/50(*48) /0/146/ 1.36 / 735\
-feed forward transition: .8  \
-\
-* boosted anti gravity to .6\cf2 \cb5 \
-\pard\pardeftab720\sl360\partightenfactor0
-\cf2 \cb5 \
-Feb 2019: \
-Fixed prop wash and almost all oscillation problems, and after this I just wanted to start putting in more time without fiddling to get more comfortable flying.\
-\
-* Upgraded to Betaflight 3.2.0\
-* Changed dshot to 1200 \
-\pard\pardeftab720\sl320\partightenfactor0
-\cf6 \cb1 * Changed rates and activated gyro notch filtering\
-\
-Roll 45 55 28\
-Pitch 61 68 32\
-Yaw 74 55\
-Dynamic filter active\
-Gyro notch, default\
-\
-* D term lowpass was set to 100\
-* Dterm notched to 200, cutoff of 100.\
-\
-Outside of radio configs and messing with OpenTX (early days of the DekuTX idea) I probably put in 200 or so flights with these final tweaks on the 5\'94 Armattan until Aug 2019, where I crash landed in a body of water.\
+###TLDR###
+Documented changes for the first  5” racing quad from stock CLF4 Racing board to smooth/responsive flights,
+If you don’t care you can find all my changes in the diffall/dumpall files anyway, but this is the order I figured them out, and for earlier versions of Betaflight.
+##########
+
+I should also note this was done back in Betaflight < 3.1.0, and then 3.2 
+
+Oct 2018:
+* Got a CLF4 Board and a Chameleon (v1) frame, stock rates felt like flying a school bus.
+* Put in my rates I had practiced from Liftoff, and it felt 100x better right off the bat.
+* Added Vbat PID Compensation
+* Moved set point transition from 0 to .7
+* Moved set point transition from .7 to .8
+* added default i term relax
+* in receiver: smoothing type: filter / channels smoothed: RPYT
+* calculated D weights to 1.0 on most using PIDs using following equation: find FF as (D/26 * D_Weight) 
+
+Notes:
+Flying better than stock, but had shakes and high oscillations on turns, and I had major prop wash. All this was noticeable on a Session 5
+
+
+Jan 2019:
+Learned more about feed forward transitioning, and I was getting better at flying, so quirks started to become more noticeable.
+
+* Changed feedforward transition again to .25
+
+47/40/28/204 / 1.72 / 768
+58/55 (*45)/30/219 / 1.72 / 768
+60/50(*48) /0/146/ 1.36 / 735
+feed forward transition: .8  
+
+* boosted anti gravity to .6
+
+Feb 2019: 
+Fixed prop wash and almost all oscillation problems, and after this I just wanted to start putting in more time without fiddling to get more comfortable flying.
+
+* Upgraded to Betaflight 3.2.0
+* Changed dshot to 1200 
+* Changed rates and activated gyro notch filtering
+
+Roll 45 55 28
+Pitch 61 68 32
+Yaw 74 55
+Dynamic filter active
+Gyro notch, default
+
+* D term lowpass was set to 100
+* Dterm notched to 200, cutoff of 100.
+
+Outside of radio configs and messing with OpenTX (early days of the DekuTX idea) I probably put in 200 or so flights with these final tweaks on the 5” Armattan until Aug 2019, where I crash landed in a body of water.
 Decided to go with 3.5.7, and built a second quad to house a Hero 7 and to run Crossfire. which is where our Github journey begins.
-\f1\fs28 \
 
-\f2\fs24 \cf2 \cb5 \
-\pard\pardeftab720\sl360\partightenfactor0
-\cf2 \cb3 \
-}
+
