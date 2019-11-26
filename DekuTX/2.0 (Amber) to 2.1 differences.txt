@@ -1,0 +1,72 @@
+Changes in the SOUNDS/en/SYSTEM folder from OpenTX 2.0 (Amber sounds) to OpenTX 2.1 
+
+0000 to 0112 - 2.1 and Amber are the same
+
+2.1	Amber	Word
+0115	0115	volt
+0116	0116	volts
+0117	0117	amp
+0118	0118	amps
+0119	0133	milliamp
+0120	0134	milliamps
+0121		knot
+0122		knots
+0123	0119	meter per second
+0124	0120	meters per second
+0125		foot per second
+0126		feet per second
+0127	0123	kilometer per hour
+0128	0124	kilometers per hour
+0129	0141	mile per hour
+0130	0142	miles per hour
+0131	0125	meter
+0132	0126	meters
+0133	0139	foot
+0134	0140	feet
+0135	 	degree celcius
+0136		degrees celcius
+0137		degree farenheit 
+0138		degrees farenheit 
+0139	0129	percent
+0140	0130	percent
+0141		milliamp hour
+0142		milliamp hours
+0143	0135	watt
+0144	0136	watts
+0145	0137	dB
+0146	0138	dB
+0147	0149	rpm
+0148	0150	rpm
+0149	0151	g
+0150	0152	g
+0151	0127	degree
+0152	0128	degrees
+0153		milliliter
+0154		milliliters
+0155		fluid ounce
+0156		fluid ounces
+0157	0143	hour
+0158	0144	hours
+0159	0145	minute
+0160	0146	minutes
+0161	0147	second
+0162	0148	seconds
+
+0165	0160	point zero
+0166	0161	point one
+0167	0162	point two
+0168	0163	point three
+0169	0164	point four
+0170	0165	point five
+0171	0166	point six
+0172	0167	point seven
+0173	0168	point eight
+0174	0169	point nine
+
+
+
+In Amber, not used in 2.1
+0131	million
+0132	milions
+
+Non-numbered files - the Amber pack has all the ones in the 2.1 pack and a few extra
